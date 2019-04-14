@@ -7,7 +7,7 @@ from kivy.lang import Builder
 
 import numpy as np
 import pandas as pd
-
+import cudf
 
 Builder.load_file('persimmon/view/blocks/csvoutblock.kv')
 
@@ -26,9 +26,15 @@ class CSVOutBlock(Block):
         self.tainted_msg = 'File not chosen in block {}!'.format(self.title)
 
     def function(self):
-        if type(self.in_1.val) == np.ndarray:
-            self.in_1.val = pd.DataFrame(self.in_1.val)
-        self.in_1.val.to_csv(path_or_buf=self.path, index=False)
+        try:
+            if type(self.in_1.val) == np.ndarray:
+                self.in_1.val = cudf.DataFrame(self.in_1.val)
+            gdf = self.in_1.val.to_pandas()
+            gdf.to_csv(path_or_buf=self.path, index=False)
+        except:
+            if type(self.in_1.val) == np.ndarray:
+                self.in_1.val = pd.DataFrame(self.in_1.val)
+            self.in_1.val.to_csv(path_or_buf=self.path, index=False)
 
     def on_path(self, instance, value):
         self.tainted = not value.endswith('.csv')

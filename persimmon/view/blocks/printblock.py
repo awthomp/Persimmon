@@ -11,5 +11,11 @@ class PrintBlock(Block):
     in_1 = ObjectProperty()
 
     def function(self):
-        Notification(title='Print results',
-                     message=str(self.in_1.val)).open()
+        try:
+            gdf = in_1.val.to_pandas()
+            Notification(title='Print results',
+                         message=str(gdf)).open()
+        except:
+            Notification(title='Print results',
+                         message=str(self.in_1.val)).open()
+            

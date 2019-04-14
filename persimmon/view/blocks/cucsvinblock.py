@@ -5,7 +5,7 @@ from persimmon.view.blocks.block import Block  # MYPY HACK
 from kivy.properties import ObjectProperty, StringProperty
 from kivy.lang import Builder
 
-import pandas as pd
+import cudf
 
 Builder.load_file('persimmon/view/blocks/cucsvinblock.kv')
 
@@ -24,7 +24,7 @@ class cuCSVInBlock(Block):
         self.tainted_msg = 'File not chosen in block {}!'.format(self.title)
 
     def function(self):
-        self.out_1.val = pd.read_csv(self.file_chosen, header=0)
+        self.out_1.val = cudf.read_csv(self.file_chosen, header=0)
 
     def on_file_chosen(self, instance, value):
         self.tainted = not value.endswith('.csv')
