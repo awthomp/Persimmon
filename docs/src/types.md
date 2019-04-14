@@ -14,12 +14,12 @@ will simply ignore the associated checks.
 
 These tools provide a useful tool to introduce type checking in current and
 new python code, however they run outside the python execution (i.e. they run
-on the non-existent python compile time) and Persimmon needs run time type
+on the non-existent python compile time) and Whitewater needs run time type
 checking for dynamic block connections.
 
 Nevertheless, this is a useful tool for improving the code quality, specially
 for the backend code, because it is much pure that the frontend.
-It is also a reference for Persimmon type system.
+It is also a reference for Whitewater type system.
 
 
 Write Time
@@ -34,10 +34,10 @@ compile time (on the literature referred as write time).
 The two languages
 -----------------
 As seen on the previous sections and the [implementation chapter](#implementation) Python and
-Persimmon are essentially two different languages, but just how different are
+Whitewater are essentially two different languages, but just how different are
 they?
 
-|                   |      Python      |       Persimmon      |
+|                   |      Python      |       Whitewater      |
 |:------------------|:----------------:|:--------------------:|
 |      Paradigm     |    Imperative    |Functional (Dataflow) |
 | Dynamic or Static |      Dynamic     |        Static        |
@@ -49,7 +49,7 @@ they?
     they are very weak compared to a truly functional language, even Python
     creator Guido van Rossum has hesitations with the current state of
     functional programming in Python [@biancuzzi2009masterminds].
-    On the other hand Persimmon is functional, as there is no asignment, nor
+    On the other hand Whitewater is functional, as there is no asignment, nor
     statements, there is only functions.
 * Dynamic or Static. Static types refer to the notion of the language using
     the type information to check for type safety on compilation time/before
@@ -57,7 +57,7 @@ they?
     it is still a relative young addition to the language, most of the
     existing codebases have not been annotated yet, and the community debates
     whether it is necessary or not.
-    Persimmon on the other hand checks the type safety of the relations on
+    Whitewater on the other hand checks the type safety of the relations on
     write time, meaning before execution.
     Dynamic types is the oposite concept, where type information is used at
     run time, this can be useful for concepts such as dynamic dispatch.
@@ -98,7 +98,7 @@ objects will run without crashing unless the code is executed.
 Because of this, types had to be invented, sometimes they correspond to
 underlying duck typing based interfaces, but sometimes they do not have a
 direct equivalent on Python.
-Types on Persimmon follow a simple tree structure, checking whether a
+Types on Whitewater follow a simple tree structure, checking whether a
 connection is safe on the notion of the types having a is-consistent-with
 relation, this is based on @pep483.
 A is-consistent-with notion extends the more typically used is-subtype-of

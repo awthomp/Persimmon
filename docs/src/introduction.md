@@ -1,7 +1,7 @@
 Introduction
 ============
 
-On this chapter Persimmon is introduced, along its main objectives and
+On this chapter Whitewater is introduced, along its main objectives and
 motivations.
 It also includes a section about topics that are related but beyond the scope
 of this project.
@@ -26,7 +26,7 @@ learning curve and widening the pool of available data scientists.
 However these tools either require coding, focus on just preprocessing tasks
 (cleaning of the data) or provide a very limited interface.
 
-Persimmon aims to provide a visual interface for scikit-learn, giving the
+Whitewater aims to provide a visual interface for scikit-learn, giving the
 ability to create pipelines without a single line of code, thus giving most of
 the power of hand coding the pipelines with a helpful visual representation.
 
@@ -178,14 +178,14 @@ The project is not concerned with the following:
 
 * General Data Cleaning/Wrangling. Although there is some data manipulation
     that is necesary and included on sklearn it is outside the scope of the
-    project, Persimmon only works with clean data. This is done because it is
+    project, Whitewater only works with clean data. This is done because it is
     very hard to translate code-based data manipulation into a visual
     representation.
 * Data Visualization. Since this kind of work is very hard to represent without
     requiring explict coding on a case by case basis, as it is highly dependent
     on the characteristics of the data to visualize.
 * General Purpose Visual Programming. Since focusing on Machine Learning allows
-    Persimmon to make assumptions about the possible programs that enable
+    Whitewater to make assumptions about the possible programs that enable
     features such as type simplification (check type chapter) or removing
     explicit flow management (more on the literature review chapter).
 
@@ -199,7 +199,7 @@ Following is the risk analysis table as well as the development methodology.
 
 The implementation chapter explains the iterative process on each of the
 iterations of the project, some interesting technical problems, and the
-immediate representation of Persimmon.
+immediate representation of Whitewater.
 
 After this, the important concept of workflows is explained, and the interface
 design, including the sketches or the color palette.

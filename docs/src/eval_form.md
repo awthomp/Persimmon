@@ -1,10 +1,10 @@
-Persimmon Evaluation
+Whitewater Evaluation
 ====================
 
 Preparation
 -----------
 
-Please go to [https://github.com/AlvarBer/Persimmon/releases] and
+Please go to [https://github.com/AlvarBer/Whitewater/releases] and
 download the latest executable. You will also need to download the
 iris dataset along with it.
 
@@ -29,9 +29,9 @@ Azure ML Studio, etc?
 Tasks
 -----
 
-For the first task you will create a small pipeline using persimmon blocks.
+For the first task you will create a small pipeline using whitewater blocks.
 
-* Execute `Persimmon.exe`, spawn a *"Read csv"* block from the **Input/Output**
+* Execute `Whitewater.exe`, spawn a *"Read csv"* block from the **Input/Output**
     tab and using the file dialog locate the **iris.csv** file you have
     downloaded earlier.
 * Spawn a classificator block from the **Classificators** tab (any will
@@ -102,4 +102,4 @@ Additional Feedback
 
 Thanks for taking the time to participate on this evaluation.
 
-[https://github.com/AlvarBer/Persimmon/releases]: https://github.com/AlvarBer/Persimmon/releases
+[https://github.com/AlvarBer/Whitewater/releases]: https://github.com/AlvarBer/Whitewater/releases

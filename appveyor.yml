@@ -23,18 +23,18 @@ build: false
 before_test:
     # Conda mypy is too old
     - "%PYTHON%\\Scripts\\pip install mypy"
-    - "%PYTHON%\\Scripts\\mypy --package persimmon"
+    - "%PYTHON%\\Scripts\\mypy --package whitewater"
 
 after_test:
-    - PyInstaller persimmon.spec
-    #- 7z a persimmon.7z dist\persimmon_debug
+    - PyInstaller whitewater.spec
+    #- 7z a whitewater.7z dist\whitewater_debug
 
 artifacts:
-    - path: dist/persimmon.exe
+    - path: dist/whitewater.exe
 
 deploy:
     provider: GitHub
-    artifact: dist/persimmon.exe
+    artifact: dist/whitewater.exe
     draft: true
     prerelease: true
     description: Windows Executable

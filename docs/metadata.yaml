@@ -1,7 +1,7 @@
 
 ---
 author: Álvaro Bermejo García
-title: Persimmon
+title: Whitewater
 subtitle: A visual dataflow language for machine learning
 date: \today
 documentclass: scrreprt
@@ -17,7 +17,7 @@ keywords:
     - Dataflow Programming
     - Functional Programming
 abstract: >
-    Persimmon is a visual programming interface that leverages scikit-learn to
+    Whitewater is a visual programming interface that leverages scikit-learn to
     provide a drag and drop interface for developing Machine Learning and
     Data Mining pipelines. It is based on the dataflow programming principles,
     giving the user a functional visual language with a type safety system that
