@@ -7,6 +7,7 @@ from .fitblock import FitBlock
 from .dictblock import DictBlock
 from .printblock import PrintBlock
 from .csvinblock import CSVInBlock
+from .cucsvinblock import cuCSVInBlock
 from .csvoutblock import CSVOutBlock
 from .tenfoldblock import TenFoldBlock
 from .predictblock import PredictBlock

@@ -40,6 +40,9 @@ Backdrop:
 					text: 'Read .csv'
 					on_release: blackboard.block_div.add_widget(b.CSVInBlock(pos=(300, 250)))
 				Button:
+					text: 'Read cuDF .csv'
+					on_release: blackboard.block_div.add_widget(b.cuCSVInBlock(pos=(300, 250)))
+				Button:
 					text: 'Write .csv'
 					on_release: blackboard.block_div.add_widget(b.CSVOutBlock(pos=(300, 250)))
 				Button:

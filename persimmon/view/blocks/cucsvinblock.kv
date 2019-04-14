@@ -1,0 +1,12 @@
+<cuCSVInBlock>:
+	out_1: out_1
+	title: 'Read .csv'
+	block_color: root.b.IO.value
+	Button:
+		pos: root.x + 30, root.y + 10
+		size_hint: 0.7, 0.5
+		text: 'Load file'
+		on_press: root.file_dialog.open()
+	OutputPin:
+		id: out_1
+		type_: root.t.DATAFRAME
