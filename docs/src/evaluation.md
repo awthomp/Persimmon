@@ -8,7 +8,7 @@ the analysis of the results.
 
 The evaluation corresponding to this system has been subjected to ethics
 approval by the **SCIENCE & TECHNOLOGY ECDA** with protocol number
-COM/UG/UH/02090, and titled 'An Evaluation of Persimmon' at date 22/02/17,
+COM/UG/UH/02090, and titled 'An Evaluation of Whitewater' at date 22/02/17,
 amended by the **HEALTH SCIENCES ENGINEERING & TECHNOLOGY ECDA** at date
 20/04/2017.
 
@@ -42,7 +42,7 @@ concepts of modifying an existing connection and complex block that require
 more interaction from the user.
 
 * First task is the creation of a simple workflow, the objective of
-    this task being to introduce Persimmon to the participants in the simplest
+    this task being to introduce Whitewater to the participants in the simplest
     terms. Using the iris dataset they perform a cross validation evaluation
     of their chosen classificator.
 * Second task is modifying the previous workflow to create a more complex

@@ -1,11 +1,11 @@
 Package Organization
 ====================
 
-Persimmon source code is written on the form of a typical python package,
+Whitewater source code is written on the form of a typical python package,
 on the following section the specifics of how the different subpackages
 are distributed and what is on each of them.
 
-![Persimmon package hierarchy](images/packages.pdf)
+![Whitewater package hierarchy](images/packages.pdf)
 
 Backend
 -------

@@ -1,13 +1,13 @@
 from setuptools import setup, find_packages
 
 
-setup(name='persimmon',
+setup(name='whitewater',
       description='A visual dataflow language for sklearn',
       author='Álvaro Bermejo',
       author_email='alvaro.garcia95@hotmail.com',
       version='0.9.1',
-      url='http://github.com/AlvarBer/Persimmon',
-      download_url='https://github.com/AlvarBer/Persimmon/archive/v0.9.1.tar.gz',
+      url='http://github.com/AlvarBer/Whitewater',
+      download_url='https://github.com/AlvarBer/Whitewater/archive/v0.9.1.tar.gz',
       license='MIT',
       packages=find_packages(),
       include_package_data=True,

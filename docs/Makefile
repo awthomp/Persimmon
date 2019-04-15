@@ -1,4 +1,4 @@
-PDF := persimmon.pdf  # PDF Default Target
+PDF := whitewater.pdf  # PDF Default Target
 MARKDOWN := introduction.md literature.md workflow.md milestones.md \
 	risk.md interface.md implementation.md types.md \
 	evaluation.md postmortem.md  # Markdown files
@@ -7,7 +7,7 @@ MARKDOWN_COMPLU := introduccion.md introduction.md focus.md literature.md \
 	types.md evaluation.md conclusiones.md postmortem.md
 APPENDICES := packages.md how.md eval_form.md # Appendix after bibliography
 METADATA := metadata.yaml  # Metadata files (Author, Date, Title, etc..)
-BIBLIOGRAPHY := persimmon.bib  # BibLaTeX bibliography
+BIBLIOGRAPHY := whitewater.bib  # BibLaTeX bibliography
 CSL := emerald-harvard.csl  # CSL file used for citations
 TEMPLATE := template.tex  # LaTeX template for producing PDF
 
@@ -49,7 +49,7 @@ herts: $(MARKDOWN) $(APPENDIX) $(TEMPLATE) $(IMAGES) $(BIBLIOGRAPHY) $(CSL) $(ME
 		--metadata degreecode:"6COM1054 - Artificial Intelligence Project" \
 		--metadata supervisor:"Dr.Mariana Lilley" \
 		$(METADATA) $(MARKDOWN) --include-after-body $(APPENDIX) \
-		--output persimmon_herts.pdf
+		--output whitewater_herts.pdf
 
 # Hertfordshire print submission
 herts_print: $(MARKDOWN) $(TEMPLATE) $(IMAGES) $(BIBLIOGRAPHY) $(CSL) $(METADATA)
@@ -63,7 +63,7 @@ herts_print: $(MARKDOWN) $(TEMPLATE) $(IMAGES) $(BIBLIOGRAPHY) $(CSL) $(METADATA
 		--metadata degree:"Modular BSc Honours in Computer Science" \
 		--metadata degreecode:"6COM1054 - Artificial Intelligence Project" \
 		--metadata supervisor:"Dr.Mariana Lilley" \
-		$(METADATA) $(MARKDOWN) --output persimmon_herts_print.pdf
+		$(METADATA) $(MARKDOWN) --output whitewater_herts_print.pdf
 
 # Complutense digital submission
 complu: $(MARKDOWN_COMPLU) $(APPENDIX) $(TEMPLATE) $(IMAGES) $(BIBLIOGRAPHY) $(CSL) $(METADATA)
@@ -79,7 +79,7 @@ complu: $(MARKDOWN_COMPLU) $(APPENDIX) $(TEMPLATE) $(IMAGES) $(BIBLIOGRAPHY) $(C
 		--metadata supervisor:"Manuel Freire Moran" \
 		--metadata cosupervisor:"Pablo Moreno Ger" \
 		--metadata titlepic:images/fdi.png $(METADATA) $(MARKDOWN_COMPLU) \
-		--include-after-body $(APPENDIX) --output persimmon_complu.pdf
+		--include-after-body $(APPENDIX) --output whitewater_complu.pdf
 
 # For standalone images
 images/%.pdf: graphs/%.tex

@@ -9,7 +9,7 @@ install:
     - pip install mypy
 
 script:
-    - mypy --package persimmon
+    - mypy --package whitewater
 
 
 after_success:  # Build binaries and documentation
@@ -28,7 +28,7 @@ branches:
 deploy:
     provider: releases
     api_key: "$GH_TOKEN"
-    file: docs/persimmon.pdf
+    file: docs/whitewater.pdf
     skip_cleanup: true
     overwrite: true
     prerelease: true

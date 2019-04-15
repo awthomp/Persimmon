@@ -54,13 +54,13 @@ Implementación:
 Retrospectiva
 -------------
 Con más de 7000 líneas de código, 10 [releases], y más de 200 commits,
-Persimmon se ha convertido en un proyecto de tamaño medio, desde su concepción
+Whitewater se ha convertido en un proyecto de tamaño medio, desde su concepción
 ha llamado la atención, con más de 3000 visitas y 100 estrellas en [Github].
 
 Ha aparecido en [múltiples], [páginas] web, e incluso ha ganado el premio al
 [mejor proyecto] en el compshow 2017 en la universidad de Hertfordshire.
 
-![Persimmon en el extranjero](images/china.png)
+![Whitewater en el extranjero](images/china.png)
 
 
 Conclusión

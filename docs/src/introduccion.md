@@ -1,7 +1,7 @@
 Introducción
 ============
 
-En este capítulo se presenta Persimmon, así como los objetivos y las
+En este capítulo se presenta Whitewater, así como los objetivos y las
 motivaciones del proyecto.
 También se incluye una sección sobre temas relaciones con el proyecto pero
 que quedan fuera del ámbito del mismo.
@@ -29,7 +29,7 @@ profesionales capaces de desarrollar análisis de datos.
 Estas herramientas por otro lado requieren programación, se centran en tareas
 de limpieza y pre-procesamiento de datos, o proveen una interfaz muy limitada.
 
-Persimmon pretende proporcionar una interfaz visual para scikit-learn, dando
+Whitewater pretende proporcionar una interfaz visual para scikit-learn, dando
 la habilidad de crear complejos procesos de análisis sin escribir una sola
 línea de código, dando al usuario una expresividad comparable a la programación
 tradicional a la vez que se le ayuda mediante estímulos visuales.
@@ -161,7 +161,7 @@ El proyecto no lidia con los siguientes temas:
 
 * Procesado de datos genéricos. Aunque hay algunas funciones de manipulación de
     datos que son necesarios y/o están incluidas en sklearn, la manipulación
-    de datos está fuera del ambito del proyecto, Persimmon trabaja con datos
+    de datos está fuera del ambito del proyecto, Whitewater trabaja con datos
     ya limpios.
     Esto se hace porque estas funciones son difífiles de presentar de manera
     visual, requiriendo interfaces especiales para ser utiles.

@@ -32,10 +32,10 @@ starts).
 And finally, cluster-oriented computing frameworks like Spark or Hadoop are
 usually in compiled languages like `Java` or `C++` for performance reasons.
 
-Persimmon main tool is scikit-learn [@scikitlearn], scikit-learn (also known as
+Whitewater main tool is scikit-learn [@scikitlearn], scikit-learn (also known as
 sklearn) is based on Numpy (a n-dimensional array for `Python` [@numpy]) and
 scipy (a scientific computing framework [@scipy]).
-Persimmon also uses pandas [@pandas] for input and output handling.
+Whitewater also uses pandas [@pandas] for input and output handling.
 
 Others papers related to the pitfalls of machine learning that proved useful
 when analyzing workflows were [@hughes1968mean], [@pitfalls].

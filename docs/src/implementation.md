@@ -3,7 +3,7 @@ Implementation
 
 On this chapter the implementation of the system is detailed, explained what
 was done in each iteration.
-After the iterations Persimmon intermediate representation is explained.
+After the iterations Whitewater intermediate representation is explained.
 Finally, some of the most complex technical problems along their respective
 solutions are detailed.
 
@@ -176,7 +176,7 @@ def on_touch_down(self, touch):
 
 Visualizing the Data Flow
 -------------------------
-One of the latest features that made it into Persimmon is the visualization
+One of the latest features that made it into Whitewater is the visualization
 of the data flowing through the cables between blocks, this was an interesting
 technical problem, since it involving relaying data back from the backend into
 the frontend (previously the communication between front and backend was
@@ -261,7 +261,7 @@ create a temporary folder). This results in manually specifying hidden
 dependencies and non python files (on this case mostly `kv` files).
 
 Unfortunately, this process has to be done on a windows system, and as such
-cannot be done on the CI[^CI] server, to see how Persimmon utilizes CI check
+cannot be done on the CI[^CI] server, to see how Whitewater utilizes CI check
 the appendix B.
 
 

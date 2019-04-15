@@ -1,7 +1,7 @@
 Postmortem
 ==========
 
-After the evaluation it is time to make a retrospective, look what Persimmon
+After the evaluation it is time to make a retrospective, look what Whitewater
 has achieved.
 
 
@@ -66,7 +66,7 @@ Implementation:
 
 Retrospective
 -------------
-With over 7k lines of code, 10 [releases], and more than 200 commits, Persimmon
+With over 7k lines of code, 10 [releases], and more than 200 commits, Whitewater
 stands as a medium size codebase, since its inception it has gathered
 attention, with over 3000 visits, and more than 90 stars on [Github].
 
@@ -118,8 +118,8 @@ Future Work
 Bibliography
 ============
 
-[Github]: htttps://github.com/AlvarBer/Persimmon
-[releases]: htttps://github.com/AlvarBer/Persimmon/releases
+[Github]: htttps://github.com/AlvarBer/Whitewater
+[releases]: htttps://github.com/AlvarBer/Whitewater/releases
 [multiple]: http://mailchi.mp/pythonweekly/python-weekly-issue-295
 [websites]: http://forum.ai100.com.cn/blog/thread/ml-2017-05-10/
 [best project]: https://twitter.com/HertfordshireCS/status/857266574356598785

@@ -28,14 +28,14 @@ source code from the visual representation, also improving the interface to
 have a better flow, more akin to Unreal Engine, as discussed on the literature
 review chapter, state of the art section.
 
-This milestone would bring Persimmon utility beyond the realm of learning tool,
+This milestone would bring Whitewater utility beyond the realm of learning tool,
 as it would be a convenient tool for the exploratory work of any ML solution
 (business case, a Kaggle[^kaggle] competition, etc...).
 
 Out of scope, but possible further applications of the system are **web/junyper**
 integration, which would mean the system would be accessible from a website
 interface, and script **synthesization**, which is the opposite of compilation,
-in other words the ability to translate a python source file to the Persimmon
+in other words the ability to translate a python source file to the Whitewater
 visual representation.
 
 
@@ -82,12 +82,12 @@ checklists on the tasks.
 
 If a task is not fully completed it can be moved back onto the product backlog.
 
-The planning board can be found at [https://trello.com/b/JmG3xy0U/persimmon]
+The planning board can be found at [https://trello.com/b/JmG3xy0U/whitewater]
 
 Source Code
 -----------
 The source code for this project is hosted on
-[https://github.com/AlvarBer/Persimmon], the organization of the code follows
+[https://github.com/AlvarBer/Whitewater], the organization of the code follows
 the feature branch workflow [@featworkflow], it can be described in terms of
 its branches.
 
@@ -113,8 +113,8 @@ Feature-specific branches
 Continuous Integration runs on travis CI, more on that on the Appendix How was
 this document made?
 
-[https://github.com/AlvarBer/Persimmon]: https://github.com/AlvarBer/Persimmon
-[https://trello.com/b/JmG3xy0U/persimmon]: https://trello.com/b/JmG3xy0U/persimmon
+[https://github.com/AlvarBer/Whitewater]: https://github.com/AlvarBer/Whitewater
+[https://trello.com/b/JmG3xy0U/whitewater]: https://trello.com/b/JmG3xy0U/whitewater
 [^kaggle]: [Kaggle.com](https://www.kaggle.com/)
 [^trello]: trello is a software for having a digital board where tracks can be
 
