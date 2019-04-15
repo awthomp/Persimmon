@@ -1,0 +1,40 @@
+*.pyup.yml
+*.travis.yml
+*.eggs
+
+# PDF files
+*.pdf
+
+# Word files
+*.docx
+
+# TeX aux files
+*.aux
+*.log
+*.tex
+
+# Except graphs
+!docs/graphs/*.tex
+
+# Vim Backup files
+*.swp
+*~
+
+# Python cache folders
+__pycache__/
+
+# PyInstaller folders
+build/
+dist/
+
+# Egg info
+*.egg-info/
+
+# CSV Files
+*.csv
+
+# virtualenv
+env
+
+# Mypy cache
+.mypy_cache
