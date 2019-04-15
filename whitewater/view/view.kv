@@ -37,10 +37,10 @@ Backdrop:
 				spacing: '10dp'
 				padding: '5dp'
 				Button:
-					text: 'Read .csv'
+					text: 'Read .csv (CPU)'
 					on_release: blackboard.block_div.add_widget(b.CSVInBlock(pos=(300, 250)))
 				Button:
-					text: 'Read cuDF .csv'
+					text: 'Read .csv (GPU)'
 					on_release: blackboard.block_div.add_widget(b.cuCSVInBlock(pos=(300, 250)))
 				Button:
 					text: 'Write .csv'
@@ -54,17 +54,23 @@ Backdrop:
 				spacing: '10dp'
 				padding: '5dp'
 				Button:
-					text: 'Random Forest'
-					on_release: blackboard.block_div.add_widget(b.RandomForestBlock(pos=(300, 250)))
+					text: 'Linear Regression (CPU)'
+					on_release: blackboard.block_div.add_widget(b.LinearRegressionBlock(pos=(300, 250)))
 				Button:
-					text: 'SVM'
-					on_release: blackboard.block_div.add_widget(b.SVMBlock(pos=(300, 250)))
-				Button:
-					text: 'KNN'
-					on_release: blackboard.block_div.add_widget(b.KNNBlock(pos=(300, 250)))
-				Button:
-					text: 'SGD'
-					on_release: blackboard.block_div.add_widget(b.SGDBlock(pos=(300, 250)))
+					text: 'Linear Regression (GPU)'
+					on_release: blackboard.block_div.add_widget(b.cuLinearRegressionBlock(pos=(300, 250)))
+#				Button:
+#					text: 'Random Forest'
+#					on_release: blackboard.block_div.add_widget(b.RandomForestBlock(pos=(300, 250)))
+#				Button:
+#					text: 'SVM'
+#					on_release: blackboard.block_div.add_widget(b.SVMBlock(pos=(300, 250)))
+#				Button:
+#					text: 'KNN'
+#					on_release: blackboard.block_div.add_widget(b.KNNBlock(pos=(300, 250)))
+#				Button:
+#					text: 'SGD'
+#					on_release: blackboard.block_div.add_widget(b.SGDBlock(pos=(300, 250)))
 		TabbedPanelItem:
 			text: 'Fit & Predict'
 			BoxLayout:

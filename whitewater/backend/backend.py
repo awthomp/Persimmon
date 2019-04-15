@@ -4,6 +4,7 @@ from typing import List, Dict, Any, Tuple, NamedTuple, Callable, TYPE_CHECKING
 from whitewater.view.pins import Pin  # For typing only
 import logging
 
+from time import time
 
 logger = logging.getLogger(__name__)
 
@@ -29,12 +30,15 @@ class Backend(EventEmitter):
     def _exec_graph_parallel(self):
         """ Execution algorithm, introduces all blocks on a set, when a block
         is executed it is taken out of the set until the set is empty. """
+        t0 = time()
         unseen = set(self.ir.blocks.keys())  # All blocks are unseen at start
         # All output pins along their respectives values
         seen = {}  # type: Dict[int, Any]
         while unseen:
             unseen, seen = self._exec_block(unseen.pop(), unseen, seen)
         logger.info('Execution done')
+        t1 = time()
+        print('Graph Execution Time: ', t1-t0)
         self.emit('graph_executed')
 
     def _exec_block(self, current: int, unseen: set,

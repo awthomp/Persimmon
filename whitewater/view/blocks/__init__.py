@@ -15,5 +15,7 @@ from .tssplitblock import TSSplitBlock
 from .gridsearchblock import GridSearchBlock
 from .randomforestblock import RandomForestBlock
 from .crossvalidationblock import CrossValidationBlock
+from .linearregressionblock import LinearRegressionBlock
+from .culinearregressionblock import cuLinearRegressionBlock
 
 from .smart_bubble import SmartBubble

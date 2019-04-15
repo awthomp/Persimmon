@@ -6,7 +6,7 @@ from kivy.properties import ObjectProperty, StringProperty
 from kivy.lang import Builder
 
 import pandas as pd
-
+from time import time
 
 Builder.load_file('whitewater/view/blocks/csvinblock.kv')
 
@@ -25,7 +25,10 @@ class CSVInBlock(Block):
         self.tainted_msg = 'File not chosen in block {}!'.format(self.title)
 
     def function(self):
+        t0 = time()
         self.out_1.val = pd.read_csv(self.file_chosen, header=0)
+        t1 = time()
+        print('\tTime for CSV Read of ', self.file_chosen, ': ', t1-t0)
 
     def on_file_chosen(self, instance, value):
         self.tainted = not value.endswith('.csv')
