@@ -26,7 +26,7 @@ class CSVInBlock(Block):
 
     def function(self):
         t0 = time()
-        self.out_1.val = pd.read_csv(self.file_chosen, header=0)
+        self.out_1.val = pd.read_csv(self.file_chosen, header=None)
         t1 = time()
         print('\tTime for CSV Read of ', self.file_chosen, ': ', t1-t0)
 
