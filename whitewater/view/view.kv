@@ -37,19 +37,19 @@ Backdrop:
 				spacing: '10dp'
 				padding: '5dp'
 				Button:
-					text: 'Read .csv (CPU)'
+					text: 'Load .csv (CPU)'
 					on_release: blackboard.block_div.add_widget(b.CSVInBlock(pos=(300, 250)))
 				Button:
-					text: 'Read .csv (GPU)'
+					text: 'Load .csv (GPU)'
 					on_release: blackboard.block_div.add_widget(b.cuCSVInBlock(pos=(300, 250)))
-				Button:
-					text: 'Write .csv'
-					on_release: blackboard.block_div.add_widget(b.CSVOutBlock(pos=(300, 250)))
+#				Button:
+#					text: 'Write .csv'
+#					on_release: blackboard.block_div.add_widget(b.CSVOutBlock(pos=(300, 250)))
 				Button:
 					text: 'Print'
 					on_release: blackboard.block_div.add_widget(b.PrintBlock(pos=(300, 250)))
 		TabbedPanelItem:
-			text: 'Classificators'
+			text: 'Classifiers'
 			BoxLayout:
 				spacing: '10dp'
 				padding: '5dp'
@@ -72,15 +72,16 @@ Backdrop:
 #					text: 'SGD'
 #					on_release: blackboard.block_div.add_widget(b.SGDBlock(pos=(300, 250)))
 		TabbedPanelItem:
-			text: 'Fit & Predict'
+#			text: 'Fit & Predict'
+			text: 'Model Tools'
 			BoxLayout:
 				spacing: '10dp'
 				padding: '5dp'
 				Button:
-					text: 'Fit'
+					text: 'Train Model'
 					on_release: blackboard.block_div.add_widget(b.FitBlock(pos=(300, 250)))
 				Button:
-					text: 'Predict'
+					text: 'Run Inference'
 					on_release: blackboard.block_div.add_widget(b.PredictBlock(pos=(300, 250)))
 		TabbedPanelItem:
 			text: 'Model Selection'
