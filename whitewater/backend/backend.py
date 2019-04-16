@@ -25,7 +25,10 @@ IR = NamedTuple('IR', [('blocks', Dict[int, BlockEntry]),
 class Backend(EventEmitter):
     def exec_graph(self, ir: IR):
         self.ir = ir
-        Thread(target=self._exec_graph_parallel).start()
+        #Thread(target=self._exec_graph_parallel).start()
+        
+        # Use this for performance -- 
+        self._exec_graph_parallel()
 
     def _exec_graph_parallel(self):
         """ Execution algorithm, introduces all blocks on a set, when a block

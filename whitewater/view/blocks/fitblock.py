@@ -15,8 +15,6 @@ class FitBlock(Block):
     est_out = ObjectProperty()
 
     def function(self):
-        
-        #X, y = self.data_in.val.iloc[:, :-1], self.data_in.val.iloc[:, -1]
         try:
             # works for Pandas
             X, y = self.data_in.val.iloc[:, :-1], self.data_in.val.iloc[:, -1]
@@ -30,3 +28,5 @@ class FitBlock(Block):
         t1 = time()
         total = t1-t0
         print('\tTime to generate model: ', t1-t0)
+
+        
