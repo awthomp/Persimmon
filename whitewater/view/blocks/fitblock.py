@@ -18,13 +18,13 @@ class FitBlock(Block):
         t0 = time()
         #X, y = self.data_in.val.iloc[:, :-1], self.data_in.val.iloc[:, -1]
         try:
+            # works for Pandas
+            X, y = self.data_in.val.iloc[:, :-1], self.data_in.val.iloc[:, -1]
+        except:
             # works for cuDF
             X, y = self.data_in.val.loc[:, ['col1', 'col2', 'col3']], self.data_in.val.loc[:, 'y']
             # transform DF to Series
             y = y['y']
-        except:
-            # works for Pandas
-            X, y = self.data_in.val.iloc[:, :-1], self.data_in.val.iloc[:, -1]
         self.est_out.val = self.est_in.val.fit(X, y)
         t1 = time()
         total = t1-t0
