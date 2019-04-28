@@ -2,6 +2,8 @@ What is it?
 -----------
 Whitewater is a *proof of concept* visual dataflow language for creating GPU accelerated sklearn pipelines. The GUI has been forked from AlvarBer/Persimmon. Currently focused on linear regression, Whitewater substitutes Pandas' read_csv calls with those from [RAPIDS](https://rapids.ai/) cuDF and Linear Regression from cuML. Data size is assumed to contain 6 columns -- 5 for the X variable and 1 for y.
 
+Visual Demo is located on [YouTube](https://www.youtube.com/watch?v=nqKDqTUqPKA&feature=youtu.be)
+
 It represents functions as blocks, inputs and outputs are presented as pins,
 and type safety is enforced when the connection is being made.
 
