@@ -5,7 +5,7 @@ Whitewater [![Travis](https://img.shields.io/travis/AlvarBer/Whitewater.svg)](ht
 
 What is it?
 -----------
-Whitewater is a visual dataflow language for creating sklearn pipelines.
+Whitewater is a *proof of concept* visual dataflow language for creating GPU accelerated sklearn pipelines. The GUI has been forked from AlvarBer/Persimmon. Currently focused on linear regression, Whitewater substitutes Pandas' read_csv calls with those from [RAPIDS](https://rapids.ai/) cuDF and Linear Regression from cuML. Data size is assumed to contain 6 columns -- 5 for the X variable and 1 for y.
 
 It represents functions as blocks, inputs and outputs are presented as pins,
 and type safety is enforced when the connection is being made.
@@ -21,12 +21,18 @@ There is also a search box that can be used for finding a particular block.
 
 How to install?
 ---------------
-If you have pip (Python 3.5+) you can simply type
+Conda install cuDF and cuML
+`conda install -c nvidia/label/cuda10.0 -c rapidsai/label/cuda10.0 -c pytorch \
+    -c numba -c conda-forge cudf=0.6 cuml=0.6 python=3.6`
+    
+Install Whitewater dependencies
+`conda install --file requirements.txt`
 
-`$> pip install whitewater`
+Install Whitewater
+`python setup.py build`
+`python setut.py install`
 
-To execute use.
-
+To execute use
 `$> python -m whitewater`
 
 For windows self-contained executables can be found on the [releases page].
