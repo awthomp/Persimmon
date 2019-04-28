@@ -22,18 +22,22 @@ There is also a search box that can be used for finding a particular block.
 How to install?
 ---------------
 Conda install cuDF and cuML
+
 `conda install -c nvidia/label/cuda10.0 -c rapidsai/label/cuda10.0 -c pytorch \
     -c numba -c conda-forge cudf=0.6 cuml=0.6 python=3.6`
     
 Install Whitewater dependencies
+
 `conda install --file requirements.txt`
 
 Install Whitewater
+
 `python setup.py build`
-`python setut.py install`
+`python setup.py install`
 
 To execute use
-`$> python -m whitewater`
+
+`python -m whitewater`
 
 For windows self-contained executables can be found on the [releases page].
 
