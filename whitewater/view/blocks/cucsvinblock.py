@@ -26,11 +26,7 @@ class cuCSVInBlock(Block):
 
     def function(self):
         t0 = time()
-        # Hacky, but getting cudf issues with iloc splitting and auto data type classification
-        try:
-            self.out_1.val = cudf.read_csv(self.file_chosen, dtype=['float32', 'float32', 'float32', 'float32', 'float32', 'float32', 'float32'])
-        except:
-            self.out_1.val = cudf.read_csv(self.file_chosen, dtype=['float32', 'float32', 'float32', 'float32', 'float32'])
+        self.out_1.val = cudf.read_csv(self.file_chosen)
         t1 = time()
         print('\tTime to load data for ', self.file_chosen, ': ', t1-t0)
 
