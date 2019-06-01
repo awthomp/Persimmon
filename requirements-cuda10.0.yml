@@ -1,0 +1,77 @@
+name: whitewater
+channels:
+- rapidsai/label/cuda10.0
+- nvidia/label/cuda10.0
+- rapidsai-nightly/label/cuda10.0
+- conda-forge
+- numba
+- defaults
+- pytorch
+dependencies:
+- nvstrings=0.8.*
+- rmm=0.8.*
+- cmake>=3.12
+- python>=3.6,<3.8
+- numba>=0.41
+- pandas>=0.23.4
+- pyarrow>=0.12.1
+- notebook>=0.5.0
+- boost
+- distributed>=1.23.0
+- cython>=0.29,<0.30
+- pytest
+- sphinx
+- sphinx_rtd_theme
+- sphinxcontrib-websupport
+- nbsphinx
+- numpydoc
+- ipython
+- recommonmark
+- pandoc=<2.0.0
+- cudatoolkit=10.0
+- cuml>=0.8*
+- cudf>=0.8*
+- cugraph>=0.8*
+- cython>=0.29*
+- appdirs>=1.4.3
+- click>=6.7
+- colorama>=0.3.9
+- cycler>=0.10.0
+- docutils>=0.13.1
+- humanfriendly>=3.2
+- Jinja2>=2.9.6
+- MarkupSafe>=1.0
+- matplotlib>=2.0.2
+- mypy>=0.511
+- packaging>=16.8
+- py>=1.4.34
+- Pygments>=2.2.0
+- pyparsing>=2.2.0
+- pytest>=3.1.2
+- python-dateutil>=2.6.0
+- pytz>=2017.2
+- requests>=2.14.2
+- six>=1.10.0
+- typed-ast>=1.0.4
+- scikit-learn
+- pip:
+  - sphinx-markdown-tables
+  - numpydoc
+  - sphinx
+  - sphinx-rtd-theme
+  - sphinxcontrib-websupport
+  - Kivy>=1.10.0
+  - Kivy-examples>=1.10.0
+  - Kivy-Garden>=0.1.4
+  - click-completion>=0.2.1
+  - crayons>=0.1.2
+  - python-Levenshtein>=0.12.0
+  - mypy-lang>=0.4.6
+  - pymitter>=0.2.3
+  - update
+  - fuzzywuzzy>=0.15.0
+
+
+
+
+
