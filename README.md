@@ -18,16 +18,17 @@ There is also a search box that can be used for finding a particular block.
 
 How to install?
 ---------------
-Conda install cuDF and cuML
-
-`conda install -c nvidia/label/cuda10.0 -c rapidsai/label/cuda10.0 -c pytorch \
-    -c numba -c conda-forge cudf=0.6 cuml=0.6 python=3.6`
+Whitewater leverages the RAPIDS cuDF, cuML, and cuGraph nightly builds. I recommend using Anaconda as the base package manager.
     
 Install Whitewater dependencies
 
-`conda install --file requirements.txt`
+`conda env create --name whitewater --file requirements-cuda10.0.yml`
 
-Install Whitewater
+Activate Whitewater environment
+
+`conda activate whitewater`
+
+Install Whitewater (first time use)
 
 `python setup.py build`
 `python setup.py install`
